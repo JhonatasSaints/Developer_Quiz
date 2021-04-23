@@ -12,7 +12,7 @@ class AppWidget extends StatelessWidget {
         body: Center(
             child: Text(
           "Olá, Jhon Dev",
-          style: TextStyle(fontSize: 30),
+          style: TextStyle(fontSize: 40),
         )),
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
