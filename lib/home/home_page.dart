@@ -2,7 +2,7 @@ import 'package:Developer_Quiz/home/widgets/appbar/app_bar_widget.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
-  HomePage({Key key}) : super(key: key);
+  HomePage({Key key}) : super(key: key); //no key {?
 
   @override
   _HomePageState createState() => _HomePageState();
