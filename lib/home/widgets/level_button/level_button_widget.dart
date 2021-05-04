@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class LevelButtonWidget extends StatelessWidget {
-  const LevelButtonWidget({Key key}) : super(key: key);
+  final String label;
+  const LevelButtonWidget({Key key, required this.label}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,13 +16,13 @@ class LevelButtonWidget extends StatelessWidget {
           )),
           borderRadius: BorderRadius.circular(28),
         ),
-        child: Padding(horizontal:26, vertical: 6),
-        
-        child: Text(
-          "Fácil",
-          style: GoogleFonts.notoSans(
-              color: AppColors.levelButtonTextFacil, fontSize: 13,
-              ),
+        child: Padding(
+          padding: const EdgeInsets.symetric(horizontal: 26, vertical: 6),
+          child: Text(
+            label,
+            style: GoogleFonts.notoSans(
+                color: AppColors.levelButtonTextFacil, fontSize: 13),
+          ),
         ));
   }
 }
